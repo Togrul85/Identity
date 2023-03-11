@@ -16,7 +16,7 @@ namespace FrontToBack2.Controllers
             _signInManager = signInManager;
         }
 
-      
+       
         public IActionResult Register()
         {
             return View();
