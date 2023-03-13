@@ -25,7 +25,12 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
     options.Lockout.MaxFailedAccessAttempts = 3;
 
-}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+
+})
+    .AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
+//.AddErrorDescriber<CustomIdentityErrorDesciber>(); ;
 
 
 

@@ -141,11 +141,11 @@
                                 <li class="nav-item">
                                     @if (User.Identity.IsAuthenticated)
                                       {     
-                                      <a asp-action ="logout" class="nav-link">Logout</a>
+                                      <a asp-controller="account" asp-action ="logout" class="nav-link">Logout</a>
                                       }
                                       else
                                     {
-                                            <a  asp-action="login" class="nav-link">Login</a>
+                                            <a  asp-controller="account" asp-action="login" class="nav-link">Login</a>
                                     }
                                 </li>
                                
